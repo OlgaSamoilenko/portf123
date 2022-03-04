@@ -8,6 +8,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
+
 </head>
 
 <body>
@@ -547,23 +548,37 @@
             </div>
             <div class="form__box">
                 <div class="form__green"></div>
-                <div class="form__card">
-                    <div class="form__card-header">Заполните форму</div>
-                    <div class="form__card-header2">и моментально получите КП на разработку Вашего сайта</div>
 
-                    <form action="#" id="form1" class="form__body">
-                        <div class="form__item">
-                            <!-- <label for="ForName" class="form__labl">Имя*</label> -->
-                            <input id="ForName" type="text" name="name" placeholder="Введите ваше имя" class="form__input">
+                <div class="form__box-wrapper">
+                    <div class="form__card">
+                        <div class="form__card-header">Заполните форму</div>
+                        <div class="form__card-header2">и моментально получите КП на разработку Вашего сайта</div>
 
+                        <form action="#" id="form1" class="form__body">
+                            <div class="form__item">
+                                <!-- <label for="ForName" class="form__labl">Имя*</label> -->
+                                <input id="ForName" type="text" name="name" placeholder="Введите ваше имя" class="form__input">
+
+                            </div>
+                            <div class="form__item">
+                                <input type="tel" class="form-control" id="phone" name="phone" placeholder="+7 (999) 99 99 999">
+
+                            </div>
+
+                        </form>
+
+                        <button id="bt-1" class="forward"> <div class="button__inf"> <a class="btn__link" href="#">Отправить</a </div></button> </a>
+                        <div class="checkbox">
+                            <input checked type="checkbox" name="agreement" class="checkbox__input" id="formAgreement">
+                            <label for="formAgreement" class="checkbox__label"> <span>Нажимая, соглашаюсь на обработку персональных данных</span></label>
                         </div>
-                        <div class="form__item">
-                            <input type="tel" class="form-control" id="phone" name="phone" placeholder="+7 (999) 99 99 999">
+                    </div>
 
-                        </div>
-                    </form>
+
+                    <div class="form__book-img">
+                        <img class="form__img" src="img/book.png" alt="book">
+                    </div>
                 </div>
-
             </div>
         </div>
 
@@ -572,6 +587,8 @@
 
     <script src="https://code.jquery.com/jquery-3.6.0.js "></script>
     <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js "></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js<script src=" https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js "></script> -->
+    <script src="jqury31/phone/jquery.maskedinput.min.js " type="text/javascript "></script>
     <script src="js/js.js "></script>
 </body>
 

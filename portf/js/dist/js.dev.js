@@ -3,6 +3,6 @@
 $(function () {
   $("#tabs").tabs();
 });
-$(document).ready(function () {
-  $("#phone").mask("+7 (999) 99-99-999");
+$(function ($) {
+  $(".form-control").mask("+7 (999) 999-9999");
 });
